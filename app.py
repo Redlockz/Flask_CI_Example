@@ -35,7 +35,6 @@ def gebruiker():
         # Log the exception and stop the Flask server
         app.logger.error(f"Error sending email: {e}")
         exit(1)
-        return "Server shutting down..."
 
     # Pass the output to the template
     return render_template('gebruiker.html', form_data=form_data)
