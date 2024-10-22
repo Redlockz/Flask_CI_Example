@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Email Template</title>
+</head>
+<body>
+    <h1>Hello, {{ form_data['name'] }}!</h1>
+    <p>Thank you for contacting us. Here are the details of your message:</p>
+    <ul>
+        <li><strong>Email:</strong> {{ form_data['email'] }}</li>
+        <li><strong>Receiver Email:</strong> {{ form_data['receiver'] }}</li>
+        <li><strong>Subject:</strong> {{ form_data['subject'] }}</li>
+    </ul>
+    <p><strong>Message:</strong></p>
+    <p>{{ form_data['body'] }}</p>
+</body>
+</html>
