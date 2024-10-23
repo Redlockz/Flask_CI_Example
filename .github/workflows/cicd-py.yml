@@ -39,7 +39,7 @@ jobs:
       run: |
         nohup python app.py &
         Start-Sleep -Seconds 5
-        pytest
+        pytest --junitxml=selenium_tests/results/pytest_report.xml
     - name: Archive Selenium test results
       uses: actions/upload-artifact@v3
       with:
